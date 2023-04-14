@@ -1,0 +1,30 @@
+PATH
+  remote: .
+  specs:
+    ask_gpt_cli (0.1.0)
+      ask_gpt (~> 1.2)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ask_gpt (1.2)
+      ruby-openai
+    httparty (0.21.0)
+      mini_mime (>= 1.0.0)
+      multi_xml (>= 0.5.2)
+    mini_mime (1.1.2)
+    multi_xml (0.6.0)
+    rake (13.0.6)
+    ruby-openai (3.7.0)
+      httparty (>= 0.18.1)
+
+PLATFORMS
+  arm64-darwin-22
+  x86_64-linux
+
+DEPENDENCIES
+  ask_gpt_cli!
+  rake (~> 13.0)
+
+BUNDLED WITH
+   2.4.8
