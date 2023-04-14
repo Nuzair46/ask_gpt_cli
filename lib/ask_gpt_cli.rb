@@ -6,7 +6,7 @@ require 'ask_gpt'
 module AskGptCli
   class CLI
     API_KEY = ENV['OPENAI_API_KEY']
-    MODEL = ENV['MODEL'] || 'gpt-3.5-turbo'
+    MODEL = ENV['ASK_GPT_MODEL'] || 'gpt-3.5-turbo'
 
     def key_exists?
       !API_KEY.nil?

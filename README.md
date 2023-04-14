@@ -1,31 +1,46 @@
-# AskGptCli
+# Ask GPT CLI
 
-TODO: Delete this and the text below, and describe your gem
+[![Gem Version](https://badge.fury.io/rb/ask_gpt_cli.svg)](https://badge.fury.io/rb/ask_gpt_cli)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ask_gpt_cli`. To experiment with that code, run `bin/console` for an interactive prompt.
+The `ask_gpt_cli` is a Ruby gem that allows you to interact with the OpenAI GPT language model through the terminal with context.
 
 ## Installation
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
+To use this gem, you need to have Ruby installed on your computer. You can install it using a package manager or follow the instructions on the [official Ruby website](https://www.ruby-lang.org/en/documentation/installation/).
 
-Install the gem and add to the application's Gemfile by executing:
+After installing Ruby, you can install the `ask_gpt_cli` gem by running the following command:
 
-    $ bundle add UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
+```bash
+gem install ask_gpt_cli
+```
 
-If bundler is not being used to manage dependencies, install the gem by executing:
+To use the `ask_gpt_cli` gem, you need to set the `OPENAI_API_KEY` environment variable to your OpenAI API key. You can find your API key from [OpenAI](https://platform.openai.com/account/api-keys).
 
-    $ gem install UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
+Set the `OPENAI_API_KEY` environment variable by running the following command:
+
+```bash
+export OPENAI_API_KEY=<your_api_key>
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+To use the `ask_gpt_cli` gem, run the following command:
 
-## Development
+```bash
+ask_gpt_cli
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+The CLI will start, and you can ask GPT any question by typing it in the terminal. GPT will respond with an answer to your question.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+## Options
 
-## Contributing
+You can customize the behavior of the `ask_gpt_cli` gem by setting the following environment variables:
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/ask_gpt_cli.
+- `ASK_GPT_MODEL`: The GPT model to use. Default is `gpt-3.5-turbo`.
+  - You can use `gpt-4` if you have access to the GPT-4 model.
+
+You can set the environment variables by running the following command:
+
+```bash
+export ASK_GPT_MODEL=<model>
+```
